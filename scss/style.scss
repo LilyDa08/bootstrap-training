@@ -1,0 +1,23 @@
+/// VARIABLES
+
+$lightpink: #FFE2E7;
+$pink: #E0B7BD;
+$darkblue: #8598C2;
+$blue: #92A7EA;
+$lightblue: #C4CFFC;
+
+/// PROJET
+
+body {
+	background-color: $blue;
+	color: $pink;
+}
+
+@mixins image($img) {
+	width : $img;
+	height: $img;
+}
+
+img {
+	@include: image(20%)
+}
